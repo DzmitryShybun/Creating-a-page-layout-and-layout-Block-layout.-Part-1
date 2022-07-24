@@ -125,4 +125,45 @@
 #footer3{
     border-top: 1px solid #ccc;
     background-color: #dedede;
+    text-align: center;
+}
+
+/*Свойство display*/
+span{
+    color: red;
+}
+.blockspan{
+    display: block;
+}
+.inlain{
+    margin-bottom: 10px;
+}
+.inlain div{
+    display: inline;
+}
+
+.inline_block span{
+    width: 100px;
+    height: 30px;
+    background-color: #aaa;
+}
+.inineBlockSpan {
+    display: inline-block;
+    text-align: center;
+    padding-top:2px;
+    padding-bottom: 0px;
+    height: auto;
+    border-radius: 3px;
+}
+.table ul{
+    display: table;
+    margin: 0;
+}
+.table li{
+    list-style-type: none;
+    display: table-cell;
+    padding: 10px;
+}
+.invisible{
+    display: none;
 }
