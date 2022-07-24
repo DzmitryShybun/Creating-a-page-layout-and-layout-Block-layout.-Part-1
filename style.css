@@ -87,3 +87,42 @@
 #footer2{
     background-color: #ccc;
 }
+
+/*Выравнивание столбцов по высоте*/
+.Column_height_alignment{
+    font-size: 18px;
+}
+.Column_height_alignment h2, p{
+    margin: 0;
+    padding: 0;
+}
+#header3{
+    background-color: #93A89E;
+    border-bottom: 2px solid #ccc;
+    border-right: 2px solid #ccc;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    padding-top: 29px;
+    padding-bottom: 29px;
+    /*height: 80px;*/
+}
+#wrapper{
+    background-color: #ddd;
+}
+#menu2{
+    background-color: #ddd;
+    float: left;
+    width: 150px;
+}
+#main3{
+    background-color: #f7f7f7;
+    border-left: 1px solid #ccc;
+    margin-left: 150px;
+    padding: 10px;
+    border-radius: 5px;
+}
+#footer3{
+    border-top: 1px solid #ccc;
+    background-color: #dedede;
+}
