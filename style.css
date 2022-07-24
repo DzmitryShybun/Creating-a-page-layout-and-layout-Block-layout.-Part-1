@@ -52,3 +52,38 @@
 #footer1{
     background-color: #cccccc;
 }
+
+/*Вложенные плавающие блоки*/
+.Nested_floating_blocks div{
+    text-align: center;
+    margin: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 20px;
+    height: 80px;
+}
+#header2{
+    background-color: #cccccc;
+}
+#Sidebar2{
+    background-color: #ddd;
+    width: 150px;
+    float: right;
+}
+#main2{
+    background-color: #fafafa;
+    height: 200px;
+    margin-right: 170px;
+}
+#menu{
+    background-color: #ddd;
+    float: right;
+    width: 160px;
+}
+#content{
+    background-color: #eee;
+    margin-right: 180px;
+}
+#footer2{
+    background-color: #ccc;
+}
