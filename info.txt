@@ -1,0 +1,6 @@
+Не понял:
+ - content:" ";
+ - асевдокласс :after;
+ - display: table;
+ - clear: both;
+
