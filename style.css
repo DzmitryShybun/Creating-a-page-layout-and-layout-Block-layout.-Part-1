@@ -441,6 +441,7 @@ footer, header{
     height: 180px;
     background-color: #eee;
     border: 1px solid #ccc;
+    margin-bottom: 60px;
 }
 .redBlock{
     position: absolute;
@@ -463,6 +464,29 @@ footer, header{
 }
 
 
-
+.fixing_positioning {
+    position: relative;
+}
+.toolbar{
+    position: fixed;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    background-color: rgba(50, 168, 82, 0.9);
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    border-radius: 15px;
+}
+.toolbar a{
+    color: #eee;
+    display: inline-block;
+    padding: 10px;
+    text-decoration: none;
+    font-family: Verdana, Arial, sans-serif;
+}
+.content1{
+    margin-top: 50px;
+    padding: 10px;
+}
 
 
