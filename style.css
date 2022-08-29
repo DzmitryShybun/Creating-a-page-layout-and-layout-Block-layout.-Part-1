@@ -354,7 +354,6 @@ footer, header{
     font-size: .75em;
     margin-top: 10px;
 }
-
 .aside li{
     list-style-type: none;
 }
@@ -403,8 +402,6 @@ footer, header{
 .wrapper, #nav1, #header5, #footer4{
     min-width: 768px;
 }
-
-
 /*Позиционирование*/
 /*Абсолютное*/
 .header1 {
@@ -488,5 +485,102 @@ footer, header{
     margin-top: 50px;
     padding: 10px;
 }
+/*Трансформации, переходы и анимации*/
+/*Трансформации*/
+/*Вращение*/
+.rot div{
+    background-color: #ccc;
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+    padding: 40px 10px;
+    box-sizing: border-box;
+    border: solid 1px #333;
+    display: inline-block;
+}
+.rotated{
+    transform: rotate(30deg);
+}
+/*Масштабирование*/
+.scale{
+    margin-bottom: 20px;
+}
+.scale div{
+    background-color: #ccc;
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+    padding: 40px 10px;
+    box-sizing: border-box;
+    border: 1px solid #333;
+    display: inline-block;
 
 
+}
+.doubleScale{
+    transform: scale(2);
+}
+.halfScale{
+    transform: scale(0.5);
+}
+.scale1{
+    transform: scale(2, 0.5);
+}
+.scaleMirror{
+    transform: scaleX(-1);
+}
+/*Перемещение*/
+.trans1 div{
+    background-color: #ccc;
+    width: 120px;
+    height: 120px;
+    margin: 5px;
+    padding: 40px 10px;
+
+    box-sizing: border-box;
+    border: 1px solid #333;
+    display: inline-block;
+}
+div.translated {
+    transform: translate(25px, 80px);
+    background-color: red;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+/*Наклон*/
+.skew div{
+    background-color: #ccc;
+    width: 120px;
+    height: 120px;
+    margin: 40px 5px 40px 5px;
+    padding: 40px 10px;
+
+    box-sizing: border-box;
+    border: 1px solid #333;
+    display: inline-block;
+}
+div.skewed{
+    transform: skew(30deg, 10deg);
+    background-color:red;
+}
+/*Исходная точка трансформации*/
+.transform_origin div{
+    background-color: #ccc;
+    width: 100px;
+    height: 100px;
+    margin: 80px 30px;
+    float: left;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+.transform1{
+    transform: rotate(-45deg);
+}
+.transform2{
+    transform-origin: left top;
+    transform: rotate(-45deg);
+}
+.transform3{
+    transform-origin: right bottom;
+    transform: rotate(-45deg);
+}
