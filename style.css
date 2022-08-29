@@ -584,3 +584,47 @@ div.skewed{
     transform-origin: right bottom;
     transform: rotate(-45deg);
 }
+
+/*Переходы*/
+.animation{
+    clear: both;
+}
+.animation div{
+    width: 100px;
+    height: 100px;
+    margin: 40px 30px;
+    border: 1px solid #333;
+    background-color: #ccc;
+
+    transition-property: background-color, width, height, border-color, border-radius, transform, text-align;
+    transition-duration: 2s, 3s, 4s, 5s, 6s, 7s, 8s;
+}
+.animation div:hover{
+    background-color: red;
+    width: 120px;
+    height: 120px;
+    border-color: blue;
+    transform: rotate(35deg);
+    border-radius: 60px;
+    text-align: center;
+}
+/*Функции анимации*/
+div.ease_in_out {
+    width: 100px;
+    height: 100px;
+    margin: 40px 30px;
+    border: 1px solid #333;
+    background-color: #ccc;
+
+    transition-property: background-color, width;
+    transition-duration: 2s, 10s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 500ms;
+
+/*    Аналогичная запись*/
+/*    transition: background-color width 3s 5s ease-in-out 500ms;*/
+}
+div:hover.ease_in_out {
+    background-color: red;
+    width: 200px;
+}
