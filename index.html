@@ -254,5 +254,43 @@
     <h2>Функции анимации</h2>
     <div title="ease-in-out:" class="ease_in_out">
     </div>
+    <h2>Анимация</h2>
+    <div class="animation1">
+    </div>
+    <h3>Создание баннера с анимацией</h3>
+    <div title="Создание баннера с анимацией">
+        <div class="banner">
+            <div class="animated">
+                <div class="text1">Только в этом месяце</div>
+                <div class="text2">Скидки по 20%</div>
+            </div>
+        </div>
+
+
+    </div>
+    <div title="Адаптивный дизайн" class="Adaptive_design">
+        <h2>Метатег Viewport</h2>
+
+    </div>
+    <div title="Мультимедиа_Видео" class="video">
+<!--        <video src="/video/moto.mp4" width="400" height="300" controls preload="auto" poster="image/poster.jpg"></video>-->
+
+
+    </div>
+    <div title="Media API" class="Media_API">
+        <h3>Media API. Управление видео из JavaScript</h3>
+        <video src="video/moto.mp4" width="400" height="300">
+            <source src="video/moto.mp4" type="video/mp4">
+            <source src="video/moto.webm" type="video/webm">
+            <source src="video/moto.ogv" type="video/ogv">
+        </video>
+        <div id="controls" class="hidden">
+            <a href="#" id="playBtn">Play</a>
+            <span id="timer">00:00</span>
+            <input type="range" step="0.1" min="0" max="1" value="0" id="volume">
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+
 </body>
 </html>

@@ -627,4 +627,118 @@ div.ease_in_out {
 div:hover.ease_in_out {
     background-color: red;
     width: 200px;
+
 }
+/*Анимация*/
+div.animation1{
+    width: 100px;
+    height: 100px;
+    margin: 40px 30px;
+    border: 1px solid #333;
+    background-color: #ccc;
+
+    animation-name: backgroundColorAnimation;
+    animation-duration: 2s;
+}
+div:hover.animation1 {
+    animation-name: backgroundColorAnimation1;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-delay: 1s;
+    animation-timing-function: ease-in-out;
+}
+/*@keyframes backgroundColorAnimation {*/
+/*    from{*/
+/*        background-color: red;*/
+/*    }*/
+/*    to{*/
+/*        background-color: blue;*/
+/*    }*/
+/*}*/
+
+
+@keyframes backgroundColorAnimation {
+    from {
+        background-color: red;
+        opacity: 0.2;
+
+    }
+    to {
+        background-color: blue;
+        opacity: 0.9;
+
+    }
+}
+@keyframes backgroundColorAnimation1 {
+    from{
+        background-color: red;
+        border-radius: 10px;
+    }
+    to{
+        background-color: blue;
+        border-radius: 40px;
+    }
+}
+s
+
+/*Создание баннера с анимацией*/
+@keyframes text1 {
+    10%{opacity: 1;}
+    40%{opacity: 0;}
+}
+@keyframes text2 {
+    30% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+}
+@keyframes banner {
+    10%{background-color: #008978;}
+    40%{background-color: #34495e;}
+    80%{background-color: green;}
+}
+.banner{
+    width: 600px;
+    height: 120px;
+    background-color: #777;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 30px;
+}
+.text1, .text2{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 120px;
+    text-align: center;
+    font-size: 40px;
+    color: #fff;
+    opacity: 0;
+}
+.text1{
+    animation: text1 6s infinite;
+}
+.text2{
+    animation: text2 6s infinite;
+}
+.animated{
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #34495e;
+    animation: banner 6s infinite;
+    border-radius: 30px;
+}
+
+/*Адаптивный дизайн*/
+/*Введение в адаптивный дизайн*/
+
+/*Media API. Управление видео из JavaScript*/
+.Media_API{
+    margin-top: 20px;
+}
+
